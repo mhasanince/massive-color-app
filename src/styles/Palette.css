@@ -5,3 +5,21 @@
 .Palette-colors {
   height: 90%;
 }
+
+.Palette-footer {
+  background-color: #fdfdfd;
+  height: 4vh;
+  margin-top: -1px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Palette-name {
+  font-weight: bold;
+}
+
+.Palette-emoji {
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
