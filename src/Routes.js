@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Link } from 'react-router-dom';
 import Palette from './Palette';
 import { generatePalette } from './colorHelpers';
 
@@ -14,9 +14,53 @@ export default class Routes extends Component {
     };
     return (
       <Switch>
-        <Route exact path="/" render={() => <h1>HomePage</h1>} />
+        <Route
+          exact
+          path="/"
+          render={() => (
+            <ol>
+              <li>
+                <Link to="/palette/material-ui-colors">
+                  /material-ui-colors
+                </Link>
+              </li>
+              <li>
+                <Link to="/palette/flat-ui-colors-v1">/flat-ui-colors-v1</Link>
+              </li>
+              <li>
+                <Link to="/palette/flat-ui-colors-dutch">
+                  /flat-ui-colors-dutch
+                </Link>
+              </li>
+              <li>
+                <Link to="/palette/flat-ui-colors-american">
+                  /flat-ui-colors-american
+                </Link>
+              </li>
+              <li>
+                <Link to="/palette/flat-ui-colors-aussie">
+                  /flat-ui-colors-aussie
+                </Link>
+              </li>
+              <li>
+                <Link to="/palette/flat-ui-colors-british">
+                  /flat-ui-colors-british
+                </Link>
+              </li>
+              <li>
+                <Link to="/palette/flat-ui-colors-indian">
+                  /flat-ui-colors-indian
+                </Link>
+              </li>
+              <li>
+                <Link to="/palette/flat-ui-colors-french">
+                  /flat-ui-colors-french
+                </Link>
+              </li>
+            </ol>
+          )}
+        />
         <Route exact path="/palette/:id" render={getPalette} />
-        <Route render={() => <h1>HomePage</h1>} />
       </Switch>
     );
   }
