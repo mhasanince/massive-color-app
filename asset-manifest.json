@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/massive-color-app/static/css/main.83293db6.chunk.css",
-    "main.js": "/massive-color-app/static/js/main.19bf0a5d.chunk.js",
-    "main.js.map": "/massive-color-app/static/js/main.19bf0a5d.chunk.js.map",
+    "main.css": "/massive-color-app/static/css/main.7f4d4a0a.chunk.css",
+    "main.js": "/massive-color-app/static/js/main.caa2c80f.chunk.js",
+    "main.js.map": "/massive-color-app/static/js/main.caa2c80f.chunk.js.map",
     "runtime-main.js": "/massive-color-app/static/js/runtime-main.511a658d.js",
     "runtime-main.js.map": "/massive-color-app/static/js/runtime-main.511a658d.js.map",
     "static/css/2.77b93774.chunk.css": "/massive-color-app/static/css/2.77b93774.chunk.css",
     "static/js/2.183e7807.chunk.js": "/massive-color-app/static/js/2.183e7807.chunk.js",
     "static/js/2.183e7807.chunk.js.map": "/massive-color-app/static/js/2.183e7807.chunk.js.map",
     "index.html": "/massive-color-app/index.html",
-    "precache-manifest.e502bfe2534bcd0f6b20003f0307019a.js": "/massive-color-app/precache-manifest.e502bfe2534bcd0f6b20003f0307019a.js",
+    "precache-manifest.d1df95a0beff9b14fc8a3d69e8a64ca5.js": "/massive-color-app/precache-manifest.d1df95a0beff9b14fc8a3d69e8a64ca5.js",
     "service-worker.js": "/massive-color-app/service-worker.js",
     "static/css/2.77b93774.chunk.css.map": "/massive-color-app/static/css/2.77b93774.chunk.css.map",
-    "static/css/main.83293db6.chunk.css.map": "/massive-color-app/static/css/main.83293db6.chunk.css.map",
+    "static/css/main.7f4d4a0a.chunk.css.map": "/massive-color-app/static/css/main.7f4d4a0a.chunk.css.map",
     "static/js/2.183e7807.chunk.js.LICENSE.txt": "/massive-color-app/static/js/2.183e7807.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.511a658d.js",
     "static/css/2.77b93774.chunk.css",
     "static/js/2.183e7807.chunk.js",
-    "static/css/main.83293db6.chunk.css",
-    "static/js/main.19bf0a5d.chunk.js"
+    "static/css/main.7f4d4a0a.chunk.css",
+    "static/js/main.caa2c80f.chunk.js"
   ]
 }
