@@ -5,7 +5,7 @@
   margin: 0 auto;
   position: relative;
   cursor: pointer;
-  margin-bottom: -4px;
+  margin-bottom: -5px;
 }
 
 .ColorBox-copy {
@@ -36,6 +36,7 @@
   bottom: 0;
   left: 0;
   padding: 0 10px;
+  font-size: 0.75rem;
   height: 2rem;
   line-height: 2rem;
   letter-spacing: 1px;
