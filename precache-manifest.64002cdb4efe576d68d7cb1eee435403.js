@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6bb4f0701f06f5ddd48631f1bfe2c49a",
+    "revision": "bc20a50cc6d1c5e5853f70a6f7f6e53f",
     "url": "/massive-color-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/massive-color-app/static/css/2.77b93774.chunk.css"
   },
   {
-    "revision": "f78c6af900576be5a772",
+    "revision": "69e44f0d37e987f7095b",
     "url": "/massive-color-app/static/css/main.83293db6.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/massive-color-app/static/js/2.d89c2d79.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f78c6af900576be5a772",
-    "url": "/massive-color-app/static/js/main.ee573e08.chunk.js"
+    "revision": "69e44f0d37e987f7095b",
+    "url": "/massive-color-app/static/js/main.809d726c.chunk.js"
   },
   {
     "revision": "691b4fc2d3c24c1b2c28",
