@@ -28,6 +28,7 @@
 
 .ColorBox:hover .ColorBox-copy {
   opacity: 1;
+  cursor: pointer;
 }
 
 .ColorBox-name {
