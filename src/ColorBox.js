@@ -23,18 +23,18 @@ export default class ColorBox extends Component {
   };
 
   render() {
-    const { color, name } = this.props;
+    const { hex, name } = this.props;
     const { isCopied } = this.state;
     return (
-      <CopyToClipboard text={color} onCopy={this.changeCopyState}>
-        <div style={{ backgroundColor: color }} className="ColorBox">
+      <CopyToClipboard text={hex} onCopy={this.changeCopyState}>
+        <div style={{ backgroundColor: hex }} className="ColorBox">
           <div
-            style={{ backgroundColor: color }}
+            style={{ backgroundColor: hex }}
             className={`copy-overlay ${isCopied && 'show'}`}
           />
           <div className={`copy-message ${isCopied && 'show'}`}>
             <h1>Copied!</h1>
-            <p>{color}</p>
+            <p>{hex}</p>
           </div>
           <div className="ColorBox-copy-container">
             <span className="ColorBox-name">{name}</span>
