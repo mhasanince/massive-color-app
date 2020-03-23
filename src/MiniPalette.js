@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/styles';
 
 const styles = {
   root: {
     width: '25%',
     backgroundColor: '#fdfdfd',
-    border: '1px solid #000000',
+    border: '2px solid #000000',
     borderRadius: '5px',
     padding: '.5rem',
     position: 'relative',
@@ -15,11 +14,7 @@ const styles = {
     '&:hover': {
       cursor: 'pointer',
     },
-    '& a': {
-      textDecoration: 'none',
-    },
   },
-  container: {},
   colors: {
     backgroundColor: '#dae1e4',
     borderRadius: '10px',
@@ -48,26 +43,22 @@ const styles = {
 };
 
 function MiniPalette(props) {
-  const { classes, paletteName, emoji, colors, id } = props;
+  const { classes, paletteName, emoji, colors, handleClick } = props;
   return (
-    <div className={classes.root}>
-      <Link to={`/massive-color-app/palette/${id}`}>
-        <div className={classes.container}>
-          <div className={classes.colors}>
-            {colors.map((color) => (
-              <div
-                key={color.name}
-                style={{ backgroundColor: color.color }}
-                className={classes.color}
-              />
-            ))}
-          </div>
-          <h5 className={classes.title}>
-            {paletteName}
-            <span className={classes.emojo}>{emoji}</span>
-          </h5>
-        </div>
-      </Link>
+    <div className={classes.root} onClick={handleClick}>
+      <div className={classes.colors}>
+        {colors.map((color) => (
+          <div
+            key={color.name}
+            style={{ backgroundColor: color.color }}
+            className={classes.color}
+          />
+        ))}
+      </div>
+      <h5 className={classes.title}>
+        {paletteName}
+        <span className={classes.emojo}>{emoji}</span>
+      </h5>
     </div>
   );
 }

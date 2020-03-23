@@ -20,6 +20,10 @@ const styles = {
 
 export default withStyles(styles)(
   class PaletteList extends Component {
+    goToPalette = (id) => {
+      this.props.history.push(`/massive-color-app/palette/${id}`);
+    };
+
     render() {
       const { classes, palettes } = this.props;
       return (
@@ -27,7 +31,11 @@ export default withStyles(styles)(
           <h1>PaletteList</h1>
           <div className={classes.palettes}>
             {palettes.map((palette, idx) => (
-              <MiniPalette ket={idx} {...palette} />
+              <MiniPalette
+                key={idx}
+                {...palette}
+                handleClick={() => this.goToPalette(palette.id)}
+              />
             ))}
           </div>
         </div>

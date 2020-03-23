@@ -19,12 +19,19 @@ export default class Routes extends Component {
         <Route
           exact
           path="/massive-color-app"
-          render={() => <PaletteList palettes={palettes} />}
+          render={(routeProps) => (
+            <PaletteList palettes={palettes} {...routeProps} />
+          )}
         />
         <Route
           exact
           path="/massive-color-app/palette/:id"
           render={getPalette}
+        />
+        <Route
+          exact
+          path="/massive-color-app/palette/:id/:color"
+          render={() => <h1>asdasd</h1>}
         />
         <Route render={() => <PaletteList palettes={palettes} />} />
       </Switch>
