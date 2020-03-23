@@ -31,6 +31,7 @@ export default class Palette extends Component {
         name={color.name}
         id={id}
         colorId={color.id}
+        showMore={true}
       />
     ));
     return (

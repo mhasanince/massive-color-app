@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Palette from './Palette';
-import { generatePalette } from './colorHelpers';
 import PaletteList from './PaletteList';
+import SingleColorPalette from './SingleColorPalette';
+import { generatePalette } from './colorHelpers';
 
 export default class Routes extends Component {
+  findPalette(id) {
+    return this.props.palettes.find(
+      (palette) => palette.id.toLowerCase() === id.toLowerCase()
+    );
+  }
+
   render() {
     const { palettes } = this.props;
-    const getPalette = (props) => {
-      let id = props.match.params.id;
-      let currentPalette = palettes.find(
-        (palette) => palette.id.toLowerCase() === id.toLowerCase()
-      );
-      return <Palette palette={generatePalette(currentPalette)} {...props} />;
-    };
     return (
       <Switch>
         <Route
@@ -26,12 +26,25 @@ export default class Routes extends Component {
         <Route
           exact
           path="/massive-color-app/palette/:id"
-          render={getPalette}
+          render={(routeProps) => (
+            <Palette
+              palette={generatePalette(
+                this.findPalette(routeProps.match.params.id)
+              )}
+            />
+          )}
         />
         <Route
           exact
           path="/massive-color-app/palette/:id/:color"
-          render={() => <h1>asdasd</h1>}
+          render={(routeProps) => (
+            <SingleColorPalette
+              palette={generatePalette(
+                this.findPalette(routeProps.match.params.id)
+              )}
+              colorId={routeProps.match.params.color}
+            />
+          )}
         />
         <Route render={() => <PaletteList palettes={palettes} />} />
       </Switch>
