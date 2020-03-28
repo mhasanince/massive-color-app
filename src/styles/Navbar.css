@@ -8,7 +8,6 @@
 .logo {
   margin-right: 15px;
   padding: 0 13px;
-  background-color: #eceff1;
   height: 100%;
   display: flex;
   align-items: center;
@@ -16,6 +15,10 @@
   font-size: 2rem;
   letter-spacing: -2px;
   font-weight: 700;
+}
+
+.logo a {
+  color: #434953;
 }
 
 .select-container {

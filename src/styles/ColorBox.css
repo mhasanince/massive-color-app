@@ -8,7 +8,16 @@
   margin-bottom: -5px;
 }
 
-.ColorBox-copy {
+.SingleColorPalette .ColorBox {
+  height: 50%;
+}
+
+.ColorBox.go-back {
+  background-color: #000000;
+}
+
+.ColorBox-copy,
+.back {
   width: 6rem;
   height: 2rem;
   border: 0;
@@ -20,9 +29,14 @@
   background-color: rgba(255, 255, 255, 0.3);
   color: #ffffff;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
   font-size: 1.1rem;
   line-height: 2rem;
   letter-spacing: 1px;
+}
+
+.ColorBox-copy {
   opacity: 0;
 }
 
